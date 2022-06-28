@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: var(--bgc-dark);
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -80,8 +81,27 @@ a, figcaption, li {
 
 /* header */
 
-header {
-    height: 50px;
+.logo {
+    width: 135px;
+    display: flex;
+    justify-content: center;
+}
+
+.quadrado {
+    width: 30px;
+    height: 30px;
+    border: 2px dotted var(--details);
+    transform: rotate(45deg);
+}
+
+.nome {
+    font-size: 35px;
+    position: absolute;
+    left: -51px;
+    top: -10px;
+    transform: rotate(-45deg);
+    width: max-content;
+    color: var(--details);
 }
 
 .container {
@@ -89,12 +109,13 @@ header {
 }
 
 nav {
-    display: grid;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 nav ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 1rem;
     list-style: none;
 }
@@ -164,7 +185,7 @@ nav a:hover {
 /* intro */
 
 .intro {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 62px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -776,20 +797,20 @@ nav a:hover {
 
 /* end skills */
 
-/* portifolio */
+/* portfolio */
 
-.portifolio .title {
+.portfolio .title {
     flex-direction: column;
     padding-top: 3rem;
 }
 
-.portifolio .title p {
+.portfolio .title p {
     width: 80%;
     max-width: 800px;
     text-align: center;
 }
 
-.portifolio .slide {
+.portfolio .slide {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     width: 100%;
@@ -846,7 +867,7 @@ nav a:hover {
     color: var(--bgc-main);
 }
 
-/* end portifolio */
+/* end portfolio */
 
 /* contact */
 
@@ -956,6 +977,7 @@ footer .social {
 @media (max-width: 820px) {
     .menu {
         display: flex;
+        justify-content: space-between;
     }
     
     nav {
@@ -997,7 +1019,7 @@ footer .social {
         left: 25%;
     }
 
-    .portifolio .slide {
+    .portfolio .slide {
         grid-template-columns: 1fr;
     }
 
