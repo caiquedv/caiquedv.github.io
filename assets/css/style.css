@@ -165,10 +165,11 @@ nav a:hover {
 /* intro */
 
 .intro {
-    height: calc((100vh - 10vh) - 3px);
+    height: calc(100vh - 10vh);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    border-bottom: 3px solid var(--details);
 }
 
 .leftSide {
@@ -183,13 +184,11 @@ nav a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 10vh;
-    border-bottom: 3px solid var(--details);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .social a:hover {
@@ -496,12 +495,21 @@ footer .social {
         margin-left: 3rem;
     }
     
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
     h1 {
         font-size: 40px;
     }
 
     h2 {
         font-size: 35px;
+    }
+
+    .leftSide {
+        width: auto;
+        text-align: center;
     }
 
     .portifolio .slide {
@@ -537,15 +545,6 @@ footer .social {
 }
 
 @media (max-width: 560px) {
-    .intro {
-        grid-template-columns: 1fr;
-    }
-
-    .leftSide {
-        width: auto;
-        text-align: center;
-    }
-
     .leftSide .btn {
         margin: 2rem 0;
     }
@@ -579,3 +578,12 @@ footer .social {
     }
 }
 
+@media (max-height: 380px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .leftSide p {
+        margin: 0.5rem 0;
+    }
+}
