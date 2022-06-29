@@ -618,6 +618,14 @@ footer .social {
     bottom: 15px;
     right: 15px;
     cursor: pointer;
+    background-image: url(../images/arrow.svg);
+    background-size: cover;
+    transform: rotate(-90deg);
+    opacity: 0.4;
+}
+
+.scrollbtn:hover {
+    opacity: unset;
 }
 
 @media (max-width: 820px) {
