@@ -1,7 +1,7 @@
 const Dqs = (el)=>document.querySelector(el);
 const Dqsa = (el)=>document.querySelectorAll(el);
 
-// Initial Data - scroll
+// Initial Data - Scroll
 
 const Btn = Dqs('.scrollbtn');
 
@@ -28,7 +28,11 @@ function subirTela() {
 let totalSlides = Dqsa('.slide').length;
 let currentSlide = 0;
 
+// Events
+
 Dqs('.slider').style.width = `calc(100% * ${totalSlides})`;
+
+// Functions
 
 function goPrev() {
     --currentSlide;
@@ -51,3 +55,18 @@ function updateMargin() {
     let newMargin = (currentSlide * sliderItemWidth);
     Dqs('.slider').style.marginLeft = `-${newMargin}px`;
 }
+
+// End
+
+// Menu mobile opener
+
+function menuToogle(){
+    let menuArea = Dqs("nav");
+    if (menuArea.style.width == '80vw') {
+        menuArea.style.width = '0px';
+    } else {
+        menuArea.style.width = '80vw';
+    }
+}
+
+// End
