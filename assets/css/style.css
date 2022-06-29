@@ -598,7 +598,7 @@ footer .social {
     color: var(--bgc-main);
 }
 
-#email {
+#email, #copy {
     display: inherit;
     gap: 1.5rem;
     align-items: center;
@@ -654,7 +654,7 @@ footer .social {
     }
 
 	.intro {
-		grid-template-columns: 1fr;
+		grid-template-columns: auto;
 		border-bottom: 3px solid var(--details);
 	}
 

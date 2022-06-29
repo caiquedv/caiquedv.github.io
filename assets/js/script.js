@@ -70,3 +70,14 @@ function menuToogle(){
 }
 
 // End
+
+// Copy
+
+document.getElementById('email').addEventListener('click', execCopy);
+
+function execCopy() {
+  document.querySelector("#copy").select();
+  document.execCommand("copy");
+}
+
+// End
