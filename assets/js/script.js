@@ -61,13 +61,16 @@ function updateMargin() {
 // Initial Data - Menu mobile opener
 
 let menuArea = Dqs("nav");
-
+let headerSize = document.querySelector('header').clientWidth;
 // Events
 
-menuArea.addEventListener('click', () => {
-    menuArea.style.width = '0px';
-    document.querySelector('#checkbox-menu').checked = false;
-});
+if(headerSize <= 820) {
+    menuArea.addEventListener('click', () => {
+        menuArea.style.width = '0px';
+        document.querySelector('#checkbox-menu').checked = false;
+    });
+};
+
 
 // Functions
 
@@ -75,4 +78,4 @@ function menuToogle(){
     menuArea.style.width == '80vw' ? menuArea.style.width = '0px' : menuArea.style.width = '80vw';    
 }
 
-// End
+// End  
