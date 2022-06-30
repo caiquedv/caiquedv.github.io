@@ -189,7 +189,7 @@ nav a:hover {
 /* intro */
 
 .intro {
-    height: calc(100vh - 62px);
+    height: calc(100vh - 65px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -307,7 +307,6 @@ nav a:hover {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    border-bottom: 3px solid var(--details);
 }
 
 .social a:hover {
@@ -317,6 +316,10 @@ nav a:hover {
 /* end intro */
 
 /* about */
+
+.about {
+    border-top: 3px solid var(--details);
+}
 
 .about .container {
     display: grid;
@@ -598,12 +601,11 @@ footer .social {
     color: var(--bgc-main);
 }
 
-#email, #copy {
+#email {
     display: inherit;
     gap: 1.5rem;
     align-items: center;
     color: var(--bgc-main);
-    cursor: pointer;
 }
 
 /* end footer*/
@@ -663,7 +665,6 @@ footer .social {
 
 	.intro {
 		grid-template-columns: auto;
-		border-bottom: 3px solid var(--details);
 	}
 
     .social {
