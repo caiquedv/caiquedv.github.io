@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arima', cursive, Arial, Helvetica, sans-serif;
     margin: 0;
     box-sizing: border-box;
     color: var(--bgc-dark);
@@ -88,6 +90,7 @@ a, figcaption, li {
     width: 135px;
     display: flex;
     justify-content: center;
+    
 }
 
 .quadrado {
@@ -99,6 +102,7 @@ a, figcaption, li {
 
 .nome {
     font-size: 35px;
+    font-family: 'Arial' , Helvetica, sans-serif;
     position: absolute;
     left: -51px;
     top: -10px;
@@ -154,7 +158,7 @@ nav a:hover {
     height: 5px;
     width: 100%;
     border-radius: 30px;
-    background: #f16234;
+    background: var(--details);
     transition: 0.25s ease-in-out;
 }
   
@@ -196,13 +200,15 @@ nav a:hover {
 }
 
 .leftSide {
-    width: 80%;
+    width: 90%;
 }
 
-.leftSide p {
+.leftSide h2 {
+    font-size: initial;
+    color: unset;
     margin: 1.5rem 0
 }
-
+ 
 .animation--content {
 	position: relative;
 	width: 100%;
@@ -387,6 +393,10 @@ nav a:hover {
 
 .skills--content figure:hover img {
     height: 100%;
+}
+
+figcaption {
+    font-weight: bold;
 }
 
 /* end skills */
@@ -597,7 +607,7 @@ footer .social {
     border: unset;
 }
 
-.container span {
+footer .container span {
     color: var(--bgc-main);
 }
 
@@ -727,9 +737,9 @@ footer .social {
         
         grid-template-columns: 1fr;
         grid-template-areas: "title"        
+                             "photo"                     
                              "list "
-                             "p "
-                             "photo";
+                             "p ";
     }
 }
 

@@ -58,26 +58,21 @@ function updateMargin() {
 
 // End
 
-// Menu mobile opener
+// Initial Data - Menu mobile opener
+
+let menuArea = Dqs("nav");
+
+// Events
+
+menuArea.addEventListener('click', () => {
+    menuArea.style.width = '0px';
+    document.querySelector('#checkbox-menu').checked = false;
+});
+
+// Functions
 
 function menuToogle(){
-    let menuArea = Dqs("nav");
-    if (menuArea.style.width == '80vw') {
-        menuArea.style.width = '0px';
-    } else {
-        menuArea.style.width = '80vw';
-    }
-}
-
-// End
-
-// Copy
-
-document.getElementById('email').addEventListener('click', execCopy);
-
-function execCopy() {
-  document.querySelector("#copy").select();
-  document.execCommand("copy");
+    menuArea.style.width == '80vw' ? menuArea.style.width = '0px' : menuArea.style.width = '80vw';    
 }
 
 // End
