@@ -109,6 +109,7 @@ a, figcaption, li {
     transform: rotate(-45deg);
     width: max-content;
     color: var(--details);
+    user-select: none;
 }
 
 header .container {
@@ -729,6 +730,10 @@ footer .container span {
 }
 
 @media (max-width: 450px) {
+    .animation--content {
+        display: none;
+    }
+
     .skills--content {
         grid-template-columns: 1fr 1fr;
     }
