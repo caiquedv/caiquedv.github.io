@@ -527,15 +527,15 @@
                 <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem">
                 <div class="inputArea">
                     <label for="name">Nome:</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" data-rules="required">
                 </div>
                 <div class="inputArea">
                     <label for="email">Email:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" data-rules="required|email">
                 </div>
                 <div class="messageArea">
-                    <label for="message">Como posso te ajudar? Digite aqui sua duvida ou mensagem:</label>
-                    <textarea name="message"></textarea>
+                    <label for="message">Como posso te ajudar?</label>
+                    <textarea name="message" required></textarea>
                 </div>
                 <button class="btn" type="submit">Enviar</button>
             </form>
