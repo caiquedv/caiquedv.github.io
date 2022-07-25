@@ -755,6 +755,7 @@ footer .container span {
 
     .about .container {
         grid-template-columns: 1fr;
+        text-align: center;
         grid-template-areas: "title"        
                              "photo"                     
                              "list "
