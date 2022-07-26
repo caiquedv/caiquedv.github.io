@@ -740,10 +740,6 @@ footer .container span {
 }
 
 @media (max-width: 560px) {
-    .leftSide .btn {
-        margin: 2rem 0;
-    }
-
     .leftSide p {
         margin: 1.5rem 0 0 0;
     }
