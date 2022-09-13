@@ -398,7 +398,7 @@ figcaption {
 .slider {
     /* width: 300%; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
 }
 
@@ -719,13 +719,6 @@ footer .container span {
     .project img { 
         width: 100%;
     }
-
-    .skills--content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-        gap: 1rem;
-    }    
 }
 
 @media (max-width: 670px) {
@@ -746,10 +739,6 @@ footer .container span {
 }
 
 @media (max-width: 450px) {
-    .skills--content {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .about .container {
         grid-template-columns: 1fr;
         text-align: center;
