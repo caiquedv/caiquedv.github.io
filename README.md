@@ -17,7 +17,7 @@
 <h2>:computer: Projeto</h2>
 
 Projeto desenvolvido para fins de estudo e como vitrine para outros projetos. <br>
-
+O site é responsivo, contém um slider para exibir os projetos contidos e formulário de contato funcional com validação nativa.
 
 <h2>:eyes: Deploy</h2>
 
