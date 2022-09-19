@@ -186,7 +186,7 @@ a, figcaption, li {
     font-family: 'Arial' , Helvetica, sans-serif;
     position: absolute;
     left: -51px;
-    top: -10px;
+    top: -7px;
     transform: rotate(-45deg);
     width: max-content;
     color: var(--details);
@@ -489,6 +489,12 @@ figcaption {
 }
 .tech img:hover {
     height: 90%;
+}
+#typeIcon {
+    width: 80% !important;
+}
+#typeIcon:hover {
+    width: 100% !important;
 }
 
 .content {
